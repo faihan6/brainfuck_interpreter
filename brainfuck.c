@@ -128,7 +128,7 @@ void handle_loop()
         /*  Every open bracket '[' should have a matching close bracket ']'.
             If the loop reaches EOF without finding a matching ']', then there is no 
             matching end bracket for the loop. This is an error and will be promply
-            thrown to the stderr stream */
+            written to the stdout stream */
         if (c == EOF)
         {
             linecount = loopstartline;
